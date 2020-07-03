@@ -20,6 +20,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
   {position: 4, name: 'calcium', weight: 1.0079, symbol: 'Z',vitamin:'calcium',salt:'calcium',vitamin1:'10%',vitamin2:'20%'},
   {position: 5, name: 'Hydrogen', weight: 1.0079, symbol: 'I',vitamin:'fenezol',salt:'calcium',vitamin1:'10%',vitamin2:'20%'},
   {position: 6, name: 'Hydrogen', weight: 1.0079, symbol: 'J',vitamin:'calcium',salt:'calcium',vitamin1:'10%',vitamin2:'20%'},
+  
 //   {position: 2, name: 'Helium', weight: 4.0026, symbol: 'He'},
 //   {position: 3, name: 'Lithium', weight: 6.941, symbol: 'Li'},
 //   {position: 4, name: 'Beryllium', weight: 9.0122, symbol: 'Be'},
@@ -40,7 +41,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
   styleUrls: ['./display.component.scss']
 })
 export class  DisplayComponent{
-  displayedColumns: string[] = ['select', 'position', 'name', 'weight', 'symbol'];
+  displayedColumns: string[] = ['select', 'position', 'name', 'weight', 'symbol','vitamin','vitamin1','vitamin2'];
   dataSource = new MatTableDataSource<PeriodicElement>(ELEMENT_DATA);
   selection = new SelectionModel<PeriodicElement>(true, []);
 
